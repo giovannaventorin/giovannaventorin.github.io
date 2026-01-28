@@ -1,43 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap");
 
-:root{
-    --primary: #6f50fa;
-    --secondary: #faa250;
-    --white: #fff;
-    --black: #000;
+:root {
+  --primary: #5b6eff;
+  --secondary: #ffa44f;
+  --white: #fff;
+  --black: #000;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", Arial;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-body{
+h1, h2 {
+  font-family: "Fanwood Text", serif;
+}
+
+/* Estrutura geral */
+body {
+  background-color: var(--white);
+}
+
+/* Cada seção */
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: clamp(40px, 6vw, 100px) clamp(20px, 8vw, 140px);
+}
+
+/* Alternância de cores */
+.section.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.section.white {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Conteúdo interno */
+.content {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Centralização especial da primeira sessão */
+.content.center {
+  align-items: center;
+  text-align: center;
+}
+
+/* Foto */
+.content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  object-fit: cover;
+}
+
+/* Contato */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact p {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.contact a{
+    color: var(--white);
+    text-decoration: 2px underline var(--secondary);
+}
+.content i{
+    font-size: 22px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Fanwood Text", serif;
+/* Blocos */
+.block {
+  margin-top: 10px;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    &.left{
-        background-color: var(--primary);
-    }
-    &.right{
-        background-color: var(--white);
-    }
-    img{
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        border: 6px solid var(--white);
-    }
+/* Listas */
+ul {
+  margin-left: 20px;
+}
+
+ul li::marker {
+  color: var(--secondary);
 }
