@@ -14,7 +14,8 @@
   font-family: "Poppins", Arial, sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Fanwood Text", serif;
 }
 
@@ -74,17 +75,19 @@ body {
 }
 
 .contact p {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
 }
-.contact a{
-    color: var(--white);
-    text-decoration: 2px underline var(--secondary);
+
+.contact a {
+  color: var(--white);
+  text-decoration: 2px underline var(--secondary);
 }
-.content i{
-    font-size: 22px;
+
+.content i {
+  font-size: 22px;
 }
 
 /* Blocos */
