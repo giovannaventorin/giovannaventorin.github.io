@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
 
 :root {
-  --primary: #5b6eff;
-  --secondary: #ffa44f;
+  --primary: #0e265d;
+  --secondary: #ca2171 ;
   --white: #fff;
   --black: #000;
 }
@@ -11,12 +11,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Google Sans Flex", Arial, sans-serif;
 }
 
-h1,
-h2 {
-  font-family: "Fanwood Text", serif;
+h2{
+  font-size: 3rem;
 }
 
 /* Estrutura geral */
@@ -75,19 +74,17 @@ body {
 }
 
 .contact p {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
 }
-
-.contact a {
-  color: var(--white);
-  text-decoration: 2px underline var(--secondary);
+.contact a{
+    color: var(--white);
+    text-decoration: 2px underline var(--secondary);
 }
-
-.content i {
-  font-size: 22px;
+.content i{
+    font-size: 22px;
 }
 
 /* Blocos */
